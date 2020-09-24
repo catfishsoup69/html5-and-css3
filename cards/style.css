@@ -1,0 +1,55 @@
+.one {
+  width: 340px;
+  height: 511px;
+  background-image: url("images/clubs-884194_640.png");
+  background-size: cover;
+  position: absolute;
+}
+
+.two {
+  width: 340px;
+  height: 511px;
+  background-image: url("images/diamonds-884189_640.png");
+  background-size: cover;
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+
+.three {
+  width: 340px;
+  height: 511px;
+  background-image: url("images/hearts-884146_640.png");
+  background-size: cover;
+  position: absolute;
+  top: 160px;
+  left: 160px;
+}
+
+.four {
+  width: 340px;
+  height: 511px;
+  background-image: url("images/hearts-884186_640.png");
+  background-size: cover;
+  position: absolute;
+  top: 240px;
+  left: 240px;
+}
+
+.five {
+  width: 340px;
+  height: 511px;
+  background-image: url("images/spades-884187_640.png");
+  background-size: cover;
+  position: absolute;
+  top: 320px;
+  left: 320px;
+}
+
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover {
+  z-index: 6;
+}
