@@ -8,25 +8,12 @@ body {
   margin: 0 auto;
 }
 
-.wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.top {
-  flex-grow: 1;
-}
-
 .header {
   min-height: 323px;
   background-color: #445161;
   color: #fff;
   padding: 50px;
   box-sizing: border-box;
-}
-
-.header-row {
   display: flex;
   justify-content: space-between;
 }
@@ -51,17 +38,20 @@ body {
 }
 
 .header__list__item {
-  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 0 0 35px;
 }
 
 .header__list__item::before {
   content: "";
-  background-image: url("../images/check_icon.png");
+  background-image: url("../img/check_icon.png");
   background-size: cover;
   width: 25px;
   height: 19px;
-  margin-right: 10px;
-  margin-top: 8px;
+  position: absolute;
+  top: 7px;
+  left: 0px;
 }
 
 .header__image {
@@ -111,6 +101,10 @@ body {
   margin-bottom: 20px;
 }
 
+.description__text:last-child {
+  margin-bottom: 0;
+}
+
 .description_video {
   width: 430px;
   height: 245px;
@@ -118,12 +112,15 @@ body {
 }
 
 .dignity {
+  width: 100%;
   min-height: 335px;
   padding: 50px;
   background-color: #f5f5f5;
+  box-sizing: border-box;
 }
 
 .dignity__title {
+  width: 100%;
   text-align: center;
 }
 
@@ -138,7 +135,9 @@ body {
 .dignity__list__item {
   width: 50%;
   margin-bottom: 35px;
-  display: flex;
+  position: relative;
+  padding: 0 23px 0 41px;
+  box-sizing: border-box;
 }
 
 .dignity__list__item:nth-last-child(-n + 2) {
@@ -147,12 +146,13 @@ body {
 
 .dignity__list__item::before {
   content: "";
-  background-image: url("../images/plus_icon.png");
+  background-image: url("../img/plus_icon.png");
   background-size: cover;
-  width: 91px;
+  width: 32px;
   height: 32px;
-  margin-right: 9px;
-  margin-top: 5px;
+  position: absolute;
+  top: 6px;
+  left: 0;
 }
 
 .screenshots {
@@ -204,4 +204,165 @@ body {
 
 .screenshots__card-textblock {
   width: 360px;
+}
+
+.reviews {
+  width: 100%;
+  min-height: 425px;
+  padding: 50px;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reviews__title {
+  text-align: center;
+  width: 100%;
+}
+
+.reviews-box {
+  display: flex;
+  margin: 0 32px 24px 0;
+  box-sizing: border-box;
+}
+
+.reviews-box:nth-of-type(2) {
+  margin: 0 0 24px 0;
+}
+
+.reviews-box:nth-of-type(3) {
+  margin: 0 32px 0 0;
+}
+
+.reviews-box:last-of-type {
+  margin: 0;
+}
+
+.reviews__img {
+  width: 75px;
+  height: 75px;
+  background-color: #445161;
+  border-radius: 50%;
+  word-break: break-all;
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: #333333;
+  width: 470px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  background-color: #EBEBEB;
+  position: relative;
+  margin: 0 0 0 24px;
+}
+
+.reviews__text:before {
+  content: "";
+  display: block;
+  border: 20px solid transparent;
+  border-right: 20px solid #EBEBEB;
+  position: absolute;
+  top: 18px;
+  left: -30px;
+}
+
+.reviews__text__name {
+  color: #989898;
+  margin-top: 15px;
+  display: block;
+  font-style: normal;
+}
+
+.prices {
+  width: 100%;
+  min-height: 656px;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.prices__title {
+  width: 100%;
+  text-align: center;
+}
+
+.prices__card {
+  width: 300px;
+  background-color: #445161;
+  color: #fff;
+  box-sizing: border-box;
+  border: 2px solid #445161;
+  margin: 0 45px 0 0;
+  border-radius: 7px;
+}
+
+.prices__card:last-child {
+  margin: 0;
+}
+
+.prices__card__title {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 16px;
+  color: #fff;
+}
+
+.prices__card__count {
+  background-color: #fff;
+  display: block;
+  box-sizing: border-box;
+  padding: 18px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #445161;
+}
+
+.prices__card__list {
+  margin: 20px;
+  padding: 0;
+  list-style-position: inside;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.prices__card__btn {
+  display: block;
+  width: 260px;
+  margin: 0 auto 20px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #445161;
+  background-color: #fff;
+}
+
+.prices__card__btn:hover {
+  color: #fff;
+  background-color: #989898;
+}
+
+.prices__card__btn:active {
+  color: #445161;
+  background-color: #fff;
 }
