@@ -92,7 +92,6 @@ body {
 
             &:nth-of-type(2n) {
                 align-self: flex-end;
-
             }
 
             &__point {
@@ -111,17 +110,147 @@ body {
                 @include point (16px, 16px);
             }
 
-            &__event {
+            &__event-1,
+            &__event-3,
+            &__event-5,
+            &__event-7 {
                 @include font;
                 text-transform: uppercase;
                 margin: 0 40px 0 0;
                 padding: 13px;
                 max-width: 155px;
                 box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+            }
 
-                &:first-of-type {
-                    background-color: #a8608c;
-                    ;
+            &__event-2,
+            &__event-4,
+            &__event-6,
+            &__event-8 {
+                @include font;
+                text-transform: uppercase;
+                margin: 0 0 0 40px;
+                padding: 13px;
+                max-width: 155px;
+                box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+            }
+
+            &__event-1 {
+                background-color: #a8608c;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    border: 6px solid transparent;
+                    border-left: 8px solid #a8608c;
+                    top: 14px;
+                    right: -14px;
+                }
+            }
+
+            &__event-2 {
+                background-color: #739ac2;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    border: 6px solid transparent;
+                    border-right: 8px solid #739ac2;
+                    top: 28px;
+                    left: -14px;
+                }
+            }
+
+            &__event-3 {
+                background-color: #967fb5;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    border: 6px solid transparent;
+                    border-left: 8px solid #967fb5;
+                    top: 14px;
+                    right: -14px;
+                }
+            }
+
+            &__event-4 {
+                background-color: #7e9874;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    border: 6px solid transparent;
+                    border-right: 8px solid #7e9874;
+                    top: 14px;
+                    left: -14px;
+                }
+            }
+
+            &__event-5 {
+                background-color: #cd3737;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    border: 6px solid transparent;
+                    border-left: 8px solid #cd3737;
+                    top: 14px;
+                    right: -14px;
+                }
+            }
+
+            &__event-6 {
+                background-color: #3d999d;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    border: 6px solid transparent;
+                    border-right: 8px solid #3d999d;
+                    top: 14px;
+                    left: -14px;
+                }
+            }
+
+            &__event-7 {
+                background-color: #967fb5;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    border: 6px solid transparent;
+                    border-left: 8px solid #967fb5;
+                    top: 14px;
+                    right: -14px;
+                }
+            }
+
+            &__event-8 {
+                background-color: #6b7392;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    border: 6px solid transparent;
+                    border-right: 8px solid #6b7392;
+                    top: 14px;
+                    left: -14px;
                 }
             }
         }
@@ -135,9 +264,129 @@ body {
     }
 }
 
-.timeline__axis__period:nth-of-type(2n) .timeline__axis__period__event {
-    margin: 0 0 0 40px;
-}
+// .timeline__axis__period:nth-of-type(2n) .timeline__axis__period__event {
+//     margin: 0 0 0 40px;
+// }
+
+// .timeline__axis__period:first-of-type .timeline__axis__period__event {
+//     background-color: #a8608c;
+//     position: relative;
+// }
+
+// .timeline__axis__period:first-of-type .timeline__axis__period__event::before {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     border: 6px solid transparent;
+//     border-left: 8px solid #a8608c;
+//     top: 14px;
+//     right: -14px;
+// }
+
+// .timeline__axis__period:nth-of-type(2) .timeline__axis__period__event {
+//     background-color: #739ac2;
+//     position: relative;
+// }
+
+// .timeline__axis__period:nth-of-type(2) .timeline__axis__period__event::before {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     border: 6px solid transparent;
+//     border-right: 8px solid #739ac2;
+//     top: 14px;
+//     left: -14px;
+// }
+
+// .timeline__axis__period:nth-of-type(3) .timeline__axis__period__event {
+//     background-color: #967fb5;
+//     position: relative;
+// }
+
+// .timeline__axis__period:nth-of-type(3) .timeline__axis__period__event::before {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     border: 6px solid transparent;
+//     border-left: 8px solid #967fb5;
+//     top: 14px;
+//     right: -14px;
+// }
+
+// .timeline__axis__period:nth-of-type(4) .timeline__axis__period__event {
+//     background-color: #7e9874;
+//     position: relative;
+// }
+
+// .timeline__axis__period:nth-of-type(4) .timeline__axis__period__event::before {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     border: 6px solid transparent;
+//     border-right: 8px solid #7e9874;
+//     top: 14px;
+//     left: -14px;
+// }
+
+// .timeline__axis__period:nth-of-type(5) .timeline__axis__period__event {
+//     background-color: #cd3737;
+//     position: relative;
+// }
+
+// .timeline__axis__period:nth-of-type(5) .timeline__axis__period__event::before {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     border: 6px solid transparent;
+//     border-left: 8px solid #cd3737;
+//     top: 14px;
+//     right: -14px;
+// }
+
+// .timeline__axis__period:nth-of-type(6) .timeline__axis__period__event {
+//     background-color: #3d999d;
+//     position: relative;
+// }
+
+// .timeline__axis__period:nth-of-type(6) .timeline__axis__period__event::before {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     border: 6px solid transparent;
+//     border-right: 8px solid #3d999d;
+//     top: 14px;
+//     left: -14px;
+// }
+
+// .timeline__axis__period:nth-of-type(7) .timeline__axis__period__event {
+//     background-color: #967fb5;
+//     position: relative;
+// }
+
+// .timeline__axis__period:nth-of-type(7) .timeline__axis__period__event::before {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     border: 6px solid transparent;
+//     border-left: 8px solid #967fb5;
+//     top: 14px;
+//     right: -14px;
+// }
+
+// .timeline__axis__period:last-of-type .timeline__axis__period__event {
+//     background-color: #6b7392;
+//     position: relative;
+// }
+
+// .timeline__axis__period:last-of-type .timeline__axis__period__event::before {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     border: 6px solid transparent;
+//     border-right: 8px solid #6b7392;
+//     top: 14px;
+//     left: -14px;
+// }
 
 .eaccp:first-letter {
     text-transform: lowercase;

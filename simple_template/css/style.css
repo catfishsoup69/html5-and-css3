@@ -108,7 +108,8 @@ body {
 .description_video {
   width: 430px;
   height: 245px;
-  background-color: #445161;
+  outline: none;
+  cursor: pointer;
 }
 
 .dignity {
