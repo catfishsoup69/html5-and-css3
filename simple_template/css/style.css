@@ -373,11 +373,11 @@ body {
 .footer {
   min-height: 509px;
   background-color: #475161;
-  padding: 50px;
-  box-sizing: border-box;
 }
 
 .contacts {
+  padding: 50px;
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -541,6 +541,7 @@ body {
 }
 
 .fab {
+  font-size: 20px;
   display: block;
   background-color: #fff;
   color: #445161;
@@ -549,6 +550,7 @@ body {
   border-radius: 50%;
   text-align: center;
   line-height: 42px !important;
+  text-decoration: none;
 }
 
 .fab:hover {
@@ -559,4 +561,20 @@ body {
 .fab:active {
   color: #445161;
   background-color: #fff;
+}
+
+.copyright-row {
+  background-color: #F5F5F5;
+  min-height: 20px;
+}
+
+.copyright {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #445162;
+  text-align: center;
 }
