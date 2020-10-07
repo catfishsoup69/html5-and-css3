@@ -327,6 +327,36 @@ body {
 
 .wordpress-theme {
     min-height: 150px;
-    background-color: #f4f5f8;
-    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+    background-color: @bg-color-aside;
+    background-image: @bg-grad-aside;
+
+    &-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 42px 0 42px 0;
+    }
+
+    &__title {
+        .third-heading();
+        margin: 0;
+        letter-spacing: 0.25px;
+    }
+
+    &__text {
+        display: block;
+        .regular-txt(300, 18px, 1.2);
+        color: @aside-color;
+        margin: 5px 0 0 0;
+        letter-spacing: -0.09px;
+    }
+
+    &__btn {
+        .btn();
+        padding: 15px 28px 12px;
+    }
+}
+
+.white-color {
+    color: @text-color_light;
 }

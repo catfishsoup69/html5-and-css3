@@ -347,3 +347,59 @@ body {
   background-color: #f4f5f8;
   background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
 }
+.wordpress-theme-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 42px 0 42px 0;
+}
+.wordpress-theme__title {
+  font-family: raleway, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #c7b299;
+  text-align: left;
+  margin: 0;
+  letter-spacing: 0.25px;
+}
+.wordpress-theme__text {
+  display: block;
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #615855;
+  margin: 5px 0 0 0;
+  letter-spacing: -0.09px;
+}
+.wordpress-theme__btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: block;
+  padding: 16px 38px 12px;
+  background-color: #998675;
+  color: #fff;
+  border-radius: 3px;
+  font-family: raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 23px;
+  text-transform: uppercase;
+  padding: 15px 28px 12px;
+}
+.wordpress-theme__btn:hover {
+  background-color: #c7b299;
+  color: #555555;
+}
+.wordpress-theme__btn:active {
+  background-color: #998675;
+  color: #d1d1d1;
+}
+.white-color {
+  color: #fff;
+}
