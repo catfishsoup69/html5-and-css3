@@ -440,9 +440,9 @@ body {
   margin: 15px 0 0 0;
 }
 .projects-tag-row {
-  width: 605px;
+  width: 628px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 34px 0 0 0;
 }
 .projects__tag-btn {
@@ -451,6 +451,7 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 21px;
+  letter-spacing: -0.8px;
   outline: none;
   color: #8c8c8c;
   padding: 5px 24px 5px 24px;
