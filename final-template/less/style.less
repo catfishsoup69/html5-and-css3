@@ -360,3 +360,281 @@ body {
 .white-color {
     color: @text-color_light;
 }
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    min-height: 936px;
+
+    &__title {
+        .second-heading();
+        margin: 0;
+        padding: 74px 0 0 0;
+        box-sizing: border-box;
+    }
+
+    &__text {
+        .paragraph();
+        max-width: 757px;
+        max-width: 769px;
+        letter-spacing: -0.1px;
+        margin: 15px 0 0 0;
+    }
+
+    &-tag-row {
+        width: 605px;
+        display: flex;
+        justify-content: space-between;
+        margin: 34px 0 0 0;
+    }
+
+    &__tag-btn {
+        .regular-txt(300, 14px, 21px);
+        outline: none;
+        color: @text-color;
+        padding: 5px 24px 5px 24px;
+        border: 1px solid #ebebeb;
+        border-radius: 3px;
+        cursor: pointer;
+        display: block;
+        background-color: @bg-color_light;
+
+        &:hover {
+            background-color: @active-color;
+            color: @text-color_dark;
+        }
+
+        &:active {
+            background-color: @btn-color;
+            color: @text-color_grey;
+        }
+
+        &:focus {
+            background-color: @btn-color;
+            color: @text-color_light;
+        }
+    }
+
+    &-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 38px 0 0 0;
+    }
+
+    &__card {
+        width: 370px;
+        position: relative;
+        margin: 0 0 30px 0;
+
+        &__img {
+            display: block;
+            width: 100%;
+            max-width: 370px;
+        }
+
+        &-textblock {
+            background-color: @bg-color_yellow;
+            position: relative;
+            min-height: 100px;
+            width: 100%;
+
+            &:before {
+                content: "";
+                border: 15px solid transparent;
+                border-bottom: 10px solid @bg-color_yellow;
+                position: absolute;
+                top: -25px;
+                left: 19px;
+                z-index: 150;
+            }
+        }
+
+        &__title {
+            display: block;
+            .decorate-txt(500, 20px, 1.2);
+            color: @active-color;
+            padding: 27px 0 0 28px;
+            letter-spacing: 0.1px;
+        }
+
+        &__tag {
+            display: block;
+            .regular-txt(300, 14px, 20px);
+            color: @text-color_grey;
+            padding: 0 0 0 28px;
+            margin: 5px 0 0 0;
+            box-sizing: border-box;
+        }
+
+        &__link {
+            top: 106px;
+            left: 144px;
+            outline: none;
+            position: absolute;
+            border: none;
+            background-image: url('../img/link.svg');
+            background-color: transparent;
+            background-size: cover;
+            width: 26px;
+            height: 26px;
+            display: none;
+            cursor: pointer;
+
+            &:hover {
+                background-image: url('../img/link_hover.svg');
+            }
+        }
+
+        &__search {
+            top: 106px;
+            right: 146px;
+            outline: none;
+            position: absolute;
+            border: none;
+            background-image: url('../img/search.svg');
+            background-color: transparent;
+            background-size: cover;
+            width: 26px;
+            height: 26px;
+            display: none;
+            cursor: pointer;
+
+            &:hover {
+                background-image: url('../img/search_hover.svg');
+            }
+        }
+
+        &:hover .projects__card__img {
+            filter: brightness(40%);
+            transition: all 0.5s ease;
+        }
+
+        &:hover .projects__card-textblock {
+            background-color: @bg-active-color-card;
+            transition: all 0.5s ease;
+        }
+
+        &:hover .projects__card-textblock:before {
+            border-bottom: 10px solid @bg-active-color-card;
+            transition: all 0.5s ease;
+        }
+
+        &:hover .projects__card__title {
+            color: @text-color_light;
+            transition: all 0.5s ease;
+        }
+
+        &:hover .projects__card__tag {
+            color: @active-color;
+            transition: all 0.5s ease;
+        }
+
+        &:hover .projects__card__link {
+            display: block;
+        }
+
+        &:hover .projects__card__search {
+            display: block;
+        }
+    }
+
+    &__btn {
+        .btn();
+        padding: 16px 42px 12px;
+        margin: 9px 0 80px 0;
+    }
+}
+
+.presentation {
+    min-height: 705px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &__video {
+        object-fit: cover;
+        position: absolute;
+        outline: none;
+    }
+
+    &-box {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 562px;
+        padding: 220px 0 0 0;
+        height: 288px;
+        justify-content: center;
+
+        &-hide {
+            display: none;
+        }
+    }
+
+    &__btn {
+        color: @text-color_light;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        position: relative;
+        box-sizing: border-box;
+        padding: 0;
+        background-color: transparent;
+        transition: all 0.5s ease;
+
+        &:after {
+            border-radius: 50%;
+            background-color: rgb(0, 0, 0);
+            opacity: 0.2;
+            position: absolute;
+            left: -10px;
+            top: -10px;
+            width: 100px;
+            height: 100px;
+            content: '';
+            z-index: 1;
+        }
+
+        &__icon {
+            fill: currentColor;
+        }
+
+        &:hover {
+            transform: scale(1.36);
+        }
+
+        &:active {
+            transform: scale(1);
+        }
+    }
+
+    &__title {
+        .second-heading();
+        font-weight: 500;
+        color: @text-color_light;
+        z-index: 1;
+        margin: 50px 0 0 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__text {
+        .paragraph();
+        color: @text-color_light;
+        z-index: 1;
+        width: 100%;
+        margin: 11px 0 0 0;
+    }
+
+    &__time {
+        display: block;
+        text-align: center;
+        .regular-txt(400, 14px, 24px);
+        color: @active-color;
+        z-index: 1;
+        width: 100%;
+        margin: 27px 0 0 0;
+    }
+}
