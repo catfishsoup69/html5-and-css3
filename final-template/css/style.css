@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  margin: 0 auto;
+  width: 1920px;
 }
 .content {
   max-width: 1170px;
@@ -708,4 +709,129 @@ body {
   z-index: 1;
   width: 100%;
   margin: 27px 0 0 0;
+}
+.mobile {
+  min-height: 695px;
+  background-color: #fbfaf8;
+  background-image: url('../img/iphone_in_hand.png');
+  background-repeat: no-repeat;
+  background-position: 423px bottom;
+}
+.mobile-wrap {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.mobile-textblock {
+  width: 664px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 190px;
+  right: 5px;
+}
+.mobile__title {
+  font-family: raleway, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #555555;
+  text-align: center;
+  text-align: left;
+  margin: 0;
+}
+.mobile__text {
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #8c8c8c;
+  text-align: center;
+  letter-spacing: -0.1px;
+  text-align: left;
+  margin: 25px 0 0 0;
+}
+.mobile__list {
+  list-style-type: none;
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #8c8c8c;
+  text-align: center;
+  letter-spacing: -0.1px;
+  text-align: left;
+  padding: 0;
+  padding: 0 11px 0 100px;
+  margin: 32px 0 0 0;
+}
+.mobile__list__item {
+  position: relative;
+  margin: 0 0 5px 0;
+}
+.mobile__list__item::before {
+  content: '';
+  background-image: url('../img/marker.svg');
+  width: 23px;
+  height: 23px;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: -52px;
+}
+.statistics {
+  min-height: 300px;
+  background-color: #f4f5f8;
+  background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+}
+.statistics-row {
+  width: 935px;
+  display: flex;
+  justify-content: space-between;
+}
+.statistics__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 69px 0 60px 0;
+  width: 136px;
+  color: #c7b299;
+}
+.statistics__item__icon {
+  fill: currentColor;
+}
+.statistics__item__count {
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 36px;
+  color: #fff;
+  margin: 27px 0 0 0;
+}
+.statistics__item__name {
+  text-transform: uppercase;
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 15px 0 0 0;
+  padding: 0 0 25px 0;
+}
+.statistics__item:hover {
+  color: #fff;
+}
+.statistics__item:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
 }
