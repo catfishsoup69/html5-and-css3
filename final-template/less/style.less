@@ -757,3 +757,56 @@ body {
 		}
 	}
 }
+
+.posts {
+	min-height: 755px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 80px 0 80px 0;
+
+	&__title {
+		width: 100%;
+		.second-heading();
+		margin: 0;
+	}
+
+	&__text {
+		width: 757px;
+		.paragraph();
+		margin: 0;
+	}
+
+	&-row {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__card {
+		width: 370px;
+
+		&-textblock {
+			width: 100%;
+			border: 1px solid #f8f8f8;
+		}
+
+		&__title {
+			.decorate-txt(500, 20px, 1.2);
+			color: @text-color_dark;
+			display: block;
+		}
+
+		&__text {
+			.regular-txt(300, 14px, 22px);
+			color: @text-color;
+			display: block;
+		}
+
+		&__link {
+			text-decoration: none;
+			.regular-txt(300, 14px, 20px);
+			color: @active-color;
+		}
+	}
+}

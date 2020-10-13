@@ -835,3 +835,71 @@ body {
   height: 2px;
   background-color: #fff;
 }
+.posts {
+  min-height: 755px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 80px 0 80px 0;
+}
+.posts__title {
+  width: 100%;
+  font-family: raleway, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #555555;
+  text-align: center;
+  margin: 0;
+}
+.posts__text {
+  width: 757px;
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #8c8c8c;
+  text-align: center;
+  margin: 0;
+}
+.posts-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.posts__card {
+  width: 370px;
+}
+.posts__card-textblock {
+  width: 100%;
+  border: 1px solid #f8f8f8;
+}
+.posts__card__title {
+  font-family: raleway, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #555555;
+  display: block;
+}
+.posts__card__text {
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #8c8c8c;
+  display: block;
+}
+.posts__card__link {
+  text-decoration: none;
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #c7b299;
+}
