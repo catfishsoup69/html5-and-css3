@@ -12,7 +12,7 @@ body {
   min-height: 323px;
   background-color: #445161;
   color: #fff;
-  padding: 50px;
+  padding: 50px 50px 44px 50px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -23,7 +23,7 @@ body {
   line-height: 1.2;
   font-weight: 400;
   text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
-  margin: -13px 0 50px 0;
+  margin: -13px 0 26px -3px;
 }
 
 .header__list {
@@ -108,7 +108,8 @@ body {
 .description_video {
   width: 430px;
   height: 245px;
-  background-color: #445161;
+  outline: none;
+  cursor: pointer;
 }
 
 .dignity {
@@ -355,6 +356,8 @@ body {
   font-weight: 700;
   color: #445161;
   background-color: #fff;
+  outline: none;
+  cursor: pointer;
 }
 
 .prices__card__btn:hover {
@@ -365,4 +368,213 @@ body {
 .prices__card__btn:active {
   color: #445161;
   background-color: #fff;
+}
+
+.footer {
+  min-height: 509px;
+  background-color: #475161;
+}
+
+.contacts {
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contacts__title {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+
+.contacts__form {
+  width: 500px;
+  margin: 0 45px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__form__name,
+.contacts__form__email,
+.contacts__form__message {
+  display: block;
+  border-radius: 5px;
+  outline: none;
+  margin: 0 0 20px 0;
+  padding: 14px 10px;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #445162;
+  box-sizing: border-box;
+}
+
+.contacts__form__name::placeholder,
+.contacts__form__email::placeholder,
+.contacts__form__message::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #445162;
+  text-transform: none;
+}
+
+.contacts__form__name:focus,
+.contacts__form__email:focus,
+.contacts__form__message:focus {
+  border: 2px solid #989898;
+}
+
+.contacts__form__name {
+  max-height: 40px;
+  text-transform: capitalize;
+}
+
+.contacts__form__email {
+  max-height: 40px;
+}
+
+.contacts__form__message {
+  max-height: 170px;
+  resize: none;
+  font-family: Arial, sans-serif;
+}
+
+.contacts__form__btn {
+  display: block;
+  border-radius: 5px;
+  outline: none;
+  margin: 0;
+  text-transform: uppercase;
+  border: none;
+  padding: 14px 48px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #445162;
+  cursor: pointer;
+}
+
+.contacts__form__btn:hover {
+  color: #fff;
+  background-color: #989898;
+}
+
+.contacts__form__btn:active {
+  color: #445161;
+  background-color: #fff;
+}
+
+.contacts-box {
+  width: 240px;
+}
+
+.contacts__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 27px;
+}
+
+.contacts__list__item {
+  position: relative;
+  margin: 0 0 22px 0;
+}
+
+.skype::before {
+  content: "";
+  background-image: url("../img/skype_icon.png");
+  background-size: cover;
+  width: 24px;
+  height: 26px;
+  position: absolute;
+  top: 0;
+  left: -27px;
+}
+
+.icq::before {
+  content: "";
+  background-image: url("../img/icq_icon.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: -27px;
+}
+
+.email::before {
+  content: "";
+  background-image: url("../img/email_icon.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: -27px;
+}
+
+.phone::before {
+  content: "";
+  background-image: url("../img/phone_icon.png");
+  background-size: cover;
+  width: 24px;
+  height: 23px;
+  position: absolute;
+  top: 0;
+  left: -27px;
+}
+
+.contacts__list__item__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contacts__social {
+  display: flex;
+  width: 240px;
+  justify-content: space-between;
+}
+
+.fab {
+  font-size: 20px;
+  display: block;
+  background-color: #fff;
+  color: #445161;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px !important;
+  text-decoration: none;
+}
+
+.fab:hover {
+  color: #fff;
+  background-color: #989898;
+}
+
+.fab:active {
+  color: #445161;
+  background-color: #fff;
+}
+
+.copyright-row {
+  background-color: #F5F5F5;
+  min-height: 20px;
+}
+
+.copyright {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #445162;
+  text-align: center;
 }

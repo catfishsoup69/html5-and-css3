@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Макет</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.min.css">
 </head>
 
 <body>
@@ -14,18 +15,10 @@
       <div class="header-textblock">
         <h1 class="header__title">Product name</h1>
         <ul class="header__list">
-          <li class="header__list__item">
-            Put on this page information about your product
-          </li>
-          <li class="header__list__item">
-            A detailed description of your product
-          </li>
-          <li class="header__list__item">
-            Tell us about the advantages and merits
-          </li>
-          <li class="header__list__item">
-            Associate the page with the payment system
-          </li>
+          <li class="header__list__item">Put on this page information about your product</li>
+          <li class="header__list__item">A detailed description of your product</li>
+          <li class="header__list__item">Tell us about the advantages and merits</li>
+          <li class="header__list__item">Associate the page with the payment system</li>
         </ul>
       </div>
       <img src="#" alt="Изображение" class="header__image" height="214">
@@ -48,7 +41,9 @@
               per&shy;ferendis nemo debitis dolor.
             </p>
           </div>
-          <video src="#" class="description_video" height="245"></video>
+          <video src="video/Dancers.mp4" class="description_video" controls width="430" height="245" poster="video/dancers.png" muted>
+          Элемент video не поддерживается вашим браузером.
+          <a href="video/Dancers.mp4">Скачайте видео</a></video>
         </div>
       </section>
       <section class="dignity">
@@ -229,7 +224,35 @@
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="contacts">
+        <h3 class="contacts__title second-heading">Contacts</h3>
+        <form class="contacts__form" action="#">
+          <input class="contacts__form__name" type="text" placeholder="Your name:" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
+          <input class="contacts__form__email" type="email" placeholder="Your email:" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+          <textarea class="contacts__form__message" cols="20" rows="6" placeholder="Your message:" required></textarea>
+          <input class="contacts__form__btn" type="submit" value="send">
+        </form>
+        <div class="contacts-box">
+          <ul class="contacts__list">
+            <li class="contacts__list__item"><a class="contacts__list__item__link paragraph skype" href="#">here_your_login_skype</a></li>
+            <li class="contacts__list__item"><a class="contacts__list__item__link paragraph icq" href="#">279679659</a></li>
+            <li class="contacts__list__item"><a class="contacts__list__item__link paragraph email" href="mailto:psdhtmlcss@mail.ru">psdhtmlcss@mail.ru</a></li>
+            <li class="contacts__list__item"><a class="contacts__list__item__link paragraph phone" href="tel:+800045685555">80&nbsp;00&nbsp;4568&nbsp;55&nbsp;55</a></li>
+          </ul>
+          <div class="contacts__social">
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+            <a href="#" class="fab fa-google"></a>
+            <a href="#" class="fab fa-youtube"></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-row">
+        <p class="copyright">Copyright © 2014 Product name · PSD HTML CSS</p>
+      </div>
+    </footer>
   </div>
 </body>
 
